@@ -519,14 +519,14 @@
 	<span class="ui-icon ui-icon-grip-diagonal-se"></span></li>
 </ul>
 <div style="display:block; margin-left:400px;">
-	<h2>Hover</h2>
+	<h2>Hover:</h2>
 
 	<div id="showcode2"></div>
 
-	<h2>Search</h2>
+	<h2>Search:</h2>
 	<label><input type="text" name="search" id="search"/>Search</label>
 
-	<h2>Selected</h2>
+	<h2>Selected:</h2>
 
 	<ul id="showcode"></ul>
 	<span class="ui-icon ui-icon-trash" id="empty" title="clear list"></span>
@@ -566,6 +566,7 @@
 		$("#search").keyup(function() {
 			var $this = $(this), term = $this.val();
 			$(".highlight").removeClass("highlight");
+			$(".selected").removeClass("selected");
 			$("#iconsarea span[class*='" + term + "']").parent().addClass("highlight");
 
 		});
