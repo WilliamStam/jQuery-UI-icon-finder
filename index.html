@@ -119,13 +119,17 @@
 			position         : relative;
 			z-index          : 0;
 		}
+
+		h1 span {
+			color : #f66;
+		}
 		h2 {
 			font-size : 22px;
 		}
 	</style>
 </head>
 <body>
-<h1>jQuery UI icon finder</h1>
+<h1>jQuery UI <span>Icon</span> finder</h1>
 <ul style="width:388px" id="iconsarea">
 
 <li class="ui-state-default" title=".ui-icon-carat-1-n">
@@ -623,6 +627,12 @@ if someone knows how to get the theme roller widget working again since they sto
 			$("#iconsarea span[class*='" + term + "']").parent().addClass("highlight");
 
 		});
+		$("body").click(function(e){
+			var $clicked = $(e.target);
+			if (!$clicked.closest("#iconsarea").get(0)){
+				$(".selected").removeClass("selected");
+			}
+		})
 
 	});
 </script>
