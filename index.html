@@ -613,6 +613,7 @@ if someone knows how to get the theme roller widget working again since they sto
 		});
 		$("#empty").click(function() {
 			$("#showcode").html("");
+			$("#search").val("").trigger("keyup");
 		});
 
 		$("#search").keyup(function() {
