@@ -1,3 +1,21 @@
 jQuery ui icon finder 
 
 A useful tool to find the right icon from the jQuery UI icon list
+
+Usage:
+click on any of the icons for it to be added to the "selected" group. once in the selected group click on the class (icon name) to select it and copy etc..
+Selected also shows the co ordinates for the icon on the ui icon sprite
+Search highlights all the classes that match on keyup.
+
+help!!!
+if someone knows how to get the theme roller widget working again since they stopped hot linking please let me know. twitter @awstam
+
+Reason:
+i saw this twitter message come through earlier:
+	"Need a quick reference for all the icons in the CSS Framework? @pfreitag has got you covered: http://bit.ly/uiicons"
+ive been using a similar interface to this project on my intranet to help me find the icon i need.. without the search. after looking at pfreitag's page i thought hmm i should make mine publicly available. here it is
+!
+
+Thanks:
+a special word of thanks to kastner on the github irc channel for helping me get the github part working :D i was seriously starting to hate the world there :D
+
